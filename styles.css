@@ -1,0 +1,205 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header (Navbar) */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    padding-top: 80px; /* To avoid content going behind fixed header */
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.left {
+    flex: 1;
+}
+
+.left h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.left span {
+    color: #004d40;
+}
+
+.left p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* Search Box */
+.search-box {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: #004d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-box button:hover {
+    background: #00332e;
+}
+
+/* Right Section */
+.right img {
+    width: 480px;
+}
+
+/* Search Results */
+#result {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    margin-top: auto;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Results Box */
+#result {
+    width: 80%;
+    background: white;
+    margin-left: 135px ;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.word-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.word-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+.pronunciation {
+    font-size: 18px;
+    color: gray;
+}
+
+.definition {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.play-btn {
+    background: #004d40;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.play-btn:hover {
+    background: #00332e;
+}
+
+/* Error and Loading Messages */
+.error {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.loading {
+    color: #004d40;
+    font-size: 18px;
+    font-weight: bold;
+}

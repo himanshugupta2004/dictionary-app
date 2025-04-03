@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="left">
+                <h1>Find <br> <span>Definitions</span></h1>
+                <p>Search for a word in the dictionary.</p>
+                <div class="search-box">
+                    <input type="text" id="wordInput" placeholder="Search...">
+                    <button onclick="searchWord()">Search</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="https://thumbs.dreamstime.com/b/literature-flat-concept-vector-illustration-books-reading-creative-writing-school-subject-storytelling-study-metaphor-textbooks-188852178.jpg" alt="Dictionary Book">
+            </div>
+        </div>
+
+        <!-- Search Result Section -->
+        <div id="result"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dictionary App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
